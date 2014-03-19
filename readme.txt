@@ -1,0 +1,16 @@
+=== All 404 Redirect to Homepage ===
+Contributors: fakhris 
+Tags: 404 error, redrection, homepage, 404 link
+Requires at least: 3.0.1
+Tested up to: 3.8.1
+Stable tag: trunk
+
+By using this smart plugin, you can fix all 404 error links by redirecting them to homepage using the SEO 301 redirection.
+
+== Description ==
+
+I have a website, every time I login to Google webmaster tools, I found many new discovered 404 error links, the problem is not in 404 errors itself, but when Google see them and count them for you!, I think that this count used in the overall site evaluation and ranking, I decided to develop <a href="http://www.clogica.com/404-redirection-to-homepage-wordpress-plugin.htm" target="_blank">All 404 Redirect to Homepage Wordpress Plugin</a> to solve these errors in SEO way by redirecting them using SEO 301 redirection.
+
+== Installation ==
+
+Extract the zip file and just drop the contents in the wp-content/plugins/ directory of your WordPress installation and then activate the Plugin from Plugins page.
