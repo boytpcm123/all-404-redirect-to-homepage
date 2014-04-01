@@ -1,5 +1,6 @@
 === All 404 Redirect to Homepage ===
 Contributors: fakhris 
+Donate link: http://www.clogica.com/donations.htm
 Tags: 404 error, redrection, homepage, 404 link
 Requires at least: 3.0.1
 Tested up to: 3.8.1
