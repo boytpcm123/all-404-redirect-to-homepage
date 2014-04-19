@@ -35,10 +35,71 @@ function p404_redirect()
 	}
 }
 
+
+//---------------------------------------------------------------
+
+   function p404_check_default_permalink() 
+    {
+       global $util,$wp_rewrite;
+       
+       $file= get_home_path() . "/.htaccess";
+       $filestr ="";
+       $begin_marker = "# BEGIN WordPress";
+       $end_marker = "# END WordPress";
+       $content="ErrorDocument 404 /index.php?error=404";
+       $findword = "ErrorDocument 404";
+       
+       if($wp_rewrite->permalink_structure =='')
+       {
+        
+        if(file_exists($file)){
+            
+           $f = @fopen( $file, 'r+' );
+           $filestr = @fread($f , filesize($file)); 
+           
+           if (strpos($filestr , $findword) === false)
+            {
+               if (strpos($filestr , $begin_marker) === false)
+                    {
+                        $filestr = $begin_marker . PHP_EOL . $content . PHP_EOL . $end_marker . PHP_EOL . $filestr ;
+                        fwrite($f ,  $filestr); 
+                        fclose($f);
+                    }
+                    else
+                    {
+                        fclose($f);
+                        $f = fopen($file, "w");
+                        $n=strpos($filestr , $begin_marker) + strlen('# BEGIN WordPress');;
+                        $div1= substr($filestr,0,$n);
+                        $div2= substr($filestr,($n+1),strlen($filestr));
+                        $filestr = $div1 . PHP_EOL . $content . PHP_EOL . $div2;
+                        fwrite($f ,  $filestr); 
+                        fclose($f);
+                        
+                    }
+            }
+            
+        }else
+        {
+          
+          $filestr = $begin_marker . PHP_EOL . $content . PHP_EOL . $end_marker ;
+          if($f = @fopen( $file, 'w' )){
+            fwrite($f ,  $filestr); 
+            fclose($f);
+            }
+        }
+       
+       }
+       
+    }
+
+
+
 //---------------------------------------------------------------
 
 function p404_header_code()
 {
+	p404_check_default_permalink();
 	$css=get_url_path() . "style.css";
 	echo '<link type="text/css" rel="stylesheet" href="'. $css .'"/>';
 	
