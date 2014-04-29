@@ -19,4 +19,4 @@ Extract the zip file and just drop the contents in the wp-content/plugins/ direc
 == Changelog ==
 
 - Fix for issue that may cause infinite redirect loop
-- Support Handling all 404 error page when using default permalink structure. 
+- Support Handling all 404 error pages when using default permalink structure. 
