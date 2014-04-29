@@ -4,7 +4,7 @@ Plugin Name: All 404 Redirect  to Homepage
 Plugin URI: http://www.clogica.com
 Description: a plugin to redirect 404 pages to home page or any custom page
 Author: Fakhri Alsadi
-Version: 1.0
+Version: 1.1
 Author URI: http://www.clogica.com
 */
 
@@ -27,7 +27,14 @@ function p404_redirect()
 	{
 	 	
 	 	$options= get_my_options();
-	 	if($options['p404_status']=='1'){
+	    $link=get_current_URL();
+	    if($link == $options['p404_redirect_to'])
+	    {
+	        echo "<b>All 404 Redirect to Homepage</b> has detected that the target URL is invalid, this will cause an infinite loop redirection, please go to the plugin settings and correct the traget link! ";
+	        exit(); 
+	    }
+	    
+	 	if($options['p404_status']=='1' & $options['p404_redirect_to']!=''){
 		 	header ('HTTP/1.1 301 Moved Permanently');
 			header ("Location: " . $options['p404_redirect_to']);
 			exit(); 
@@ -108,7 +115,7 @@ function p404_header_code()
 //---------------------------------------------------------------
 
 function p404_admin_menu() {
-	add_options_page('All 404 Redirect to Homepage', 'All 404 Redirect to Homepage', 10, basename(__FILE__), 'p404_options_menu'  );
+	add_options_page('All 404 Redirect to Homepage', 'All 404 Redirect to Homepage', 'manage_options', basename(__FILE__), 'p404_options_menu'  );
 }
 
 //---------------------------------------------------------------

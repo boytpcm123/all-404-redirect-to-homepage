@@ -1,5 +1,28 @@
 <?php
 
+function get_current_URL()
+{
+	$prt = $_SERVER['SERVER_PORT'];
+	$sname = $_SERVER['SERVER_NAME'];
+	
+	if (array_key_exists('HTTPS',$_SERVER) && $_SERVER['HTTPS'] != 'off' && $_SERVER['HTTPS'] != '')
+	$sname = "https://" . $sname; 
+	else
+	$sname = "http://" . $sname; 
+	
+	if($prt !=80)
+	{
+	$sname = $sname . ":" . $prt;
+	} 
+	
+	$path = $sname . $_SERVER["REQUEST_URI"];
+	
+	return $path ;
+
+}
+
+//-----------------------------------------------------
+
 function get_abs_path()
 {
 	return WP_PLUGIN_DIR . '/' . basename(dirname(__FILE__)) . '/';
@@ -130,7 +153,7 @@ $userAgent= $_SERVER['HTTP_USER_AGENT'];
 function init_my_options()
 {	
 	add_option(OPTIONS404);
-	
+	$options = array();
 	$options['p404_redirect_to']= site_url();
 	$options['p404_status']= '1';	
 	update_option(OPTIONS404,$options);
