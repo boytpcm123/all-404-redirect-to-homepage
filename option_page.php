@@ -52,7 +52,7 @@ info_option_msg("You have a cache plugin installed <b>'" . there_is_cache() . "'
 
 
 <div class='procontainer'><div class='inner'>
-<h3>This plugin function is included in another amazing plugin that can control the following:</h3>
+<h3>This plugin's function is included in another amazing plugin that can control the following:</h3>
 
 <ul class="">
 	<li>Build all redirect types 301,302 or 307 easily using different ways.</li>
