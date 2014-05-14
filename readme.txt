@@ -1,7 +1,7 @@
 === All 404 Redirect to Homepage ===
 Contributors: fakhris 
 Donate link: http://www.clogica.com/donations.htm
-Tags: 404 error, redrection, homepage, 404 link,redirection, redirected, 301 seo redirect, post redirect plugin
+Tags: 404 error, redirection, homepage, 404 link,redirect, redirected, 301 seo redirect, post redirect plugin
 Requires at least: 3.0.1
 Tested up to: 3.9
 Stable tag: trunk
