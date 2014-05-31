@@ -16,6 +16,9 @@ I have a website, every time I login to Google webmaster tools, I found many new
 
 Extract the zip file and just drop the contents in the wp-content/plugins/ directory of your WordPress installation and then activate the Plugin from Plugins page.
 
+<p>view this posts if you want more details about installing plugins: <a href="http://www.wpfasthelp.com/how-to-install-wordpress-plugins.htm">
+http://www.wpfasthelp.com/how-to-install-wordpress-plugins.htm</a></p>
+
 == Changelog ==
 
 - Fix for issue that may cause infinite redirect loop
