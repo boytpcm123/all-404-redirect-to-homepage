@@ -15,7 +15,7 @@ require_once ('functions.php');
 
 add_action('admin_menu', 'p404_admin_menu');
 add_action('admin_head', 'p404_header_code');
-add_action('wp', 'p404_redirect');
+add_action('init', 'p404_redirect');
 
 register_activation_hook( __FILE__ , 'p404_install' );
 register_deactivation_hook( __FILE__ , 'p404_uninstall' );
