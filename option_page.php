@@ -37,7 +37,7 @@ info_option_msg("You have a cache plugin installed <b>'" . there_is_cache() . "'
 	<br/><br/>
 	
 	Redirect all 404 pages to: 
-	<input type="text" name="redirect_to" id="redirect_to" size="30" value="<?=$options['p404_redirect_to']?>">		
+	<input type="text" name="redirect_to" id="redirect_to" size="30" value="<?php echo $options['p404_redirect_to']?>">		
 	
 	
 	
