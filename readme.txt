@@ -3,7 +3,7 @@ Contributors: fakhris
 Donate link: http://www.clogica.com/donations.htm
 Tags: 404 error, redirection, homepage, 404 link,redirect, redirected, 301 seo redirect, post redirect plugin
 Requires at least: 3.0.1
-Tested up to: 4.1.1
+Tested up to: 4.2.1
 Stable tag: trunk
 
 By using this smart plugin, you can fix all 404 error links by redirecting them to homepage using the SEO 301 redirection.

@@ -78,9 +78,9 @@ info_option_msg("You have a cache plugin installed <b>'" . there_is_cache() . "'
 <p>
 
 	<map name="proFPMap0">
-    <area target="_blank" href="http://codecanyon.net/item/seo-redirection-pro/7596396?ref=fakhri" shape="rect" coords="7, 5, 113, 44">
-    <area target="_blank" href="http://codecanyon.net/theme_previews/7596396-seo-redirection-pro?url_name=seo-redirection-pro&ref=fakhri" shape="rect" coords="119, 5, 228, 44">
-    <area target="_blank" href="http://www.clogica.com/downloads/documentation/documentation.zip" shape="rect" coords="232, 7, 352, 42">
+    <area target="_blank" href="http://www.clogica.com/product/seo-redirection-premium-wordpress-plugin" shape="rect" coords="7, 5, 113, 44">
+    <area target="_blank" href="http://www.clogica.com/product/seo-redirection-premium-wordpress-plugin" shape="rect" coords="119, 5, 228, 44">
+    <area target="_blank" href="http://www.clogica.com/product/seo-redirection-premium-wordpress-plugin" shape="rect" coords="232, 7, 352, 42">
     </map>
     <img border="0" src="<?=get_url_path()?>/images/buttons.png" width="360" height="51" usemap="#proFPMap0">
   </div></div>  
