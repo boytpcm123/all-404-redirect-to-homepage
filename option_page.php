@@ -53,36 +53,10 @@ info_option_msg("You have a cache plugin installed <b>'" . there_is_cache() . "'
 
 
 <div class='procontainer'><div class='inner'>
-<h3>This plugin functions are included in another amazing plugin that can control the following:</h3>
 
-<ul class="">
-	<li>Build all redirect types 301,302 or 307 easily using different ways.</li>
-	<li>You can redirect folders using different rules for there content and 
-	sub-folders.</li>
-	<li>Supports Regular Expression to build redirect custom rules.</li>
-	<li>Supports wild card redirection.</li>
-	<li>Can deal any post or page with published, draft or deleted status.</li>
-	<li>keeps track of all 404 Error pages and fix them using 301 redirects.</li>
-	<li>You can make different rules for 404 error pages redirects.</li>
-	<li>Adds auto redirects when you change the Permalink of any post or page 
-	and reflect the changes to the all redirects and rules.</li>
-	<li>Provides full detailed history of all redirects made.</li>
-	<li>Provides a list of all new discover 404 Error pages and gives you the 
-	control to redirect them.</li>
-	<li>keeps track of deleted items and ask to redirect them using 301 
-	redirect.</li>
-	<li>Advanced control panel to manage all plugin functions.</li>
-	<li>Friendly and easy to use tabbed GUI.</li>
-</ul>
+<h3>if you concerned about building <font color="#FF0000">SEO redirects</font> 
+and <font color="#FF0000">fixing 404 Errors</font> for your site
+<a target="_blank" href="http://www.clogica.com/product/seo-redirection-premium-wordpress-plugin">
+take a look into this plugin </a></h3>
 
-<p>
-
-	<map name="proFPMap0">
-    <area target="_blank" href="http://www.clogica.com/product/seo-redirection-premium-wordpress-plugin" shape="rect" coords="7, 5, 113, 44">
-    <area target="_blank" href="http://www.clogica.com/product/seo-redirection-premium-wordpress-plugin" shape="rect" coords="119, 5, 228, 44">
-    <area target="_blank" href="http://www.clogica.com/product/seo-redirection-premium-wordpress-plugin" shape="rect" coords="232, 7, 352, 42">
-    </map>
-    <img border="0" src="<?=get_url_path()?>/images/buttons.png" width="360" height="51" usemap="#proFPMap0">
-  </div></div>  
-    
 </div>
