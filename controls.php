@@ -16,5 +16,3 @@ include_once "controls/cf_datemenu.php";
 include_once "controls/cf_dropdown.php";
 include_once "controls/cf_tab.php";
 include_once "controls/cf_wherest.php";
-
-?>

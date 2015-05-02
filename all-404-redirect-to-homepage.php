@@ -8,7 +8,6 @@ Version: 1.3
 Author URI: http://www.clogica.com
 */
 
-session_start();
 
 define( 'OPTIONS404', 'options-404-redirect-group' );
 require_once ('functions.php');
@@ -141,5 +140,3 @@ function p404_uninstall(){
 }
 
 //---------------------------------------------------------------
-
-?>

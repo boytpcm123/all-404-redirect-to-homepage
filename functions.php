@@ -234,5 +234,3 @@ $plugins=get_option( 'active_plugins' );
 }
 
    
-     
-?>
